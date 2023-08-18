@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid mt-3">
             <a class="navbar-brand" href="#">
                 <img src="Screenshot (3).png" alt="LOGO" style="width: 65px;" class="rounded-pill">
@@ -27,7 +27,7 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="#"><b>Services</b></a></li>
             <li class="nav-item"><a class="nav-link" href="#"><b>Testimonials</b></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><b>Blog</b></a></li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><b>Online Booking</b></a>
               <div class="sub-menu-1">
                 <ul class="dropdown-menu">
@@ -79,6 +79,18 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container-fluid bg-light p-3 text-white">
+        <div class="container bg-success p-3 row">
+            <div class="col-sm-4">
+                
+            </div>
+        </div>
+        <div class="container bg-danger p-3">
+            <div class="col-sm-4">
+                
+            </div>
+        </div> 
     </div>
 </body>
 </html>
