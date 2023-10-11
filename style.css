@@ -1,4 +1,8 @@
-nav{
-  color: #4dccd2;
-  position: fixed;
+.active{
+  color: orangered !important;
 }
+/* .nav-link:hover{
+  color:orangered;
+  transform: scale(0.075);
+  transition: 0.1s ease-in;
+} */

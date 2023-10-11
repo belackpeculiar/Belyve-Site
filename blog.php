@@ -1,14 +1,10 @@
-<?php
-  include "connect.php"
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
+    <title>blog page</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -16,7 +12,7 @@
 </head>
 
 <body style="background-color:#fcf1f3">
-    <div class="container bg-white p-0">
+    <div class="container bg-white">
         <!--navbar starts-->
 
         <nav class="navbar navbar-expand-lg navbar-light sticky-top px-lg-5 py-lg-0 container position-fixed bg-white">
@@ -29,15 +25,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="navbar-nav mx-auto">
-                        <a class="nav-link m-2 nav-item active " href="index.php">Home</a>
+                        <a class="nav-link m-2 nav-item " href="index.php">Home</a>
                         <a class="nav-link m-2 nav-item " href="site.php">About Us</a>
                         <a class="nav-link m-2 nav-item" href="services.php">Services</a>
-                        <a class="nav-link m-2 nav-item" href="blog.php">Blog</a>
+                        <a class="nav-link m-2 nav-item active " href="blog.php">Blog</a>
                     </div>
-                    <form class="d-flex">
-                        <a href="register.php" class="btn btn-secondary m-2 rounded-pill px-3 d-none d-lg-block">Register <i class="ri-arrow-right-fill"></i></a>
-                        <a href="login_form.php" class="btn btn-secondary m-2 rounded-pill px-3 d-none d-lg-block">Login <i class="ri-arrow-right-fill"></i></a>
-                    </form>
+                    <a href="register.php" class="btn btn-secondary m-2 rounded-pill px-3 d-none d-lg-block">Register <i class="ri-arrow-right-fill"></i></a>
+                    <a href="login_form.php" class="btn btn-secondary m-2 rounded-pill px-3 d-none d-lg-block">Login <i class="ri-arrow-right-fill"></i></a>
                 </div>
         </nav>
         <!-- end of navbar-->
@@ -53,7 +47,7 @@
             </div>
 
             <!-- The slideshow/carousel -->
-            <div class="carousel-inner" style="box-shadow: 0000; border-radius:10px;">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="images/pic1.jpg" alt="" class="d-block" style="width:100%; height:500px">
                     <div class="carousel-caption">
@@ -87,147 +81,104 @@
             </button>
         </div>
 
-        <!-- advantages starts-->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 " style="max-width: 600px;">
-                    <h1 class="mb-3 text-secondary">Facilities</h1>
-                    <p></p>
+        <div class="container-fluid p-3">
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-sm-4 p-3">
+                    <div><a href="https://www.nih.gov" class=" nav-link">
+                            <img src="images/NIH.jpg" alt="" class="rounded img-fluid">
+                            <p></p>
+                            <img src="images/nih.png" alt="" class="rounded-pill img-fluid" style="width: 25px;">https://www.nih.gov
+                            <h4>National Institutes Of Health(NIH) </h4>
+                        </a></div>
                 </div>
-                <div class=" container row g-4">
-                    <div class="col-sm-3 mb-3 ">
-                        <div class="container">
-                            <h3 class="text-center ">1:1 nutrition therapy </h3>
-                        </div>
-                        <div class="container rounded-circle bg-info">
-                            <h1 class="text-center"><i class="ri-shake-hands-line"></i></h1>
-                            <p class="text-center">A meal plan is your guide for what and how much to eat to get the nutrition you need</p>
-                        </div>
+                <div class="col-sm-4 p-3">
+                    <div><a href="https://www.eatright.org" class="nav-link">
+                            <img src="images/and.jpg" alt="" class="rounded img-fluid">
+                            <p></p>
+                            <img src="images/loga.png" alt="" class="rounded-pill img-fluid" style="width: 25px;">https://www.eatright.org
+                            <h4>Academy Of Nutrition And Dietetics(AND)</h4>
+                        </a></div>
+                </div>
+                <div class="col-sm-4 p-3">
+                    <div>
+                        <a href="https://www.who.int" class=" nav-link">
+                            <img src="images/who.png" alt="" class="rounded img-fluid">
+                            <p></p>
+                            <img src="images/who.jpg" alt="" class="rounded-pill img-fluid" style="width: 25px;">https://www.who.int
+                            <h4>World Health Organisation(WHO)</h4>
+                        </a>
                     </div>
-                    <div class="col-sm-3 mb-3 ">
-                        <div class="container">
-                            <h3 class="text-center ">Recipe Collections</h3>
-                        </div>
-
-                        <div class="container rounded-circle bg-info">
-                            <h1 class="text-center"><i class="ri-restaurant-fill"></i></h1>
-                            <p class="text-center">Curate a collection of healthy recipes, categorized by meal type, dietary restrictions.</p>
-                        </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-4 p-3">
+                    <div>
+                        <a href="https://www.cdc.gov/index.htm" class=" nav-link">
+                            <img src="images/cdc.png" alt="" class="rounded img-fluid">
+                            <p></p>
+                            <img src="images/cd.png" alt="" class="rounded-pill img-fluid" style="width: 25px;">https://www.cdc.gov/index.htm
+                            <h4>Centers Of Disease Control And Pervention(CDC) </h4>
+                        </a>
                     </div>
-                    <div class="col-sm-3 mb-3 ">
-                        <div class="container">
-                            <h3 class="text-center ">Body Maintenance</h3>
-                        </div>
-                        <div class="container rounded-circle bg-info">
-                            <h1 class="text-center"><i class="ri-run-line"></i></h1>
-                            <p class="text-center">Offer evidence-based strategies for healthy weight loss or weight maintenance</p>
-                        </div>
+                </div>
+                <div class="col-sm-4 p-3">
+                    <div>
+                        <a href="https://www.usda.gov" class=" nav-link">
+                            <img src="images/nih1.jpg" alt="" class="rounded img-fluid">
+                            <p></p>
+                            <img src="images/who.jpg" alt="" class="rounded-pill img-fluid" style="width: 25px;">https://www.usda.gov
+                            <h4>U.S. Department Of Agriculture(USDA) </h4>
+                        </a>
                     </div>
-                    <div class="col-sm-3 mb-3 ">
-                        <div class="container">
-                            <h3 class="text-center ">Snack Ideas</h3>
-                        </div>
-                        <div class="container rounded-circle bg-info">
-                            <h1 class="text-center"><i class="ri-cake-3-line"></i></h1>
-                            <p class="text-center">Share ideas for nutritious, satisfying snacks that can be enjoyed on the go or at home.</p>
-                        </div>
+                </div>
+                <div class="col-sm-4 p-3">
+                    <div>
+                        <a href="https://www.mayoclinic.org" class=" nav-link">
+                            <img src="images/mc.jpg" alt="" class="rounded img-fluid">
+                            <p></p>
+                            <img src="images/mc.png" alt="" class="rounded-pill img-fluid" style="width: 25px;">https://www.mayoclinic.org
+                            <h4>Mayo Clinic </h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div>
+                        <a href="https://www.efsa.europa.eu/en" class=" nav-link">
+                            <img src="images/efs.png" alt="" class="rounded img-fluid">
+                            <p></p>
+                            <img src="images/efs1.png" alt="" class="rounded-pill img-fluid" style="width: 25px;">https://www.efsa.europa.eu/en
+                            <h4>Europe Food Safety Authority(EFSA) </h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <a href="https://www.nutrition.gov" class=" nav-link">
+                            <img src="images/nu.jpg" alt="" class="rounded img-fluid">
+                            <p></p>
+                            <img src="images/nut.jpg" alt="" class="rounded-pill img-fluid" style="width: 25px;">https://www.nutrition.gov
+                            <h4>Nutrition.gov </h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <a href="https://www.hsph.harvard.edu" class="nav-link">
+                            <img src="images/hth.png" alt="" class="rounded img-fluid">
+                            <p></p>
+                            <img src="images/ht.png" alt="" class="rounded-pill img-fluid" style="width: 25px;">https://www.hsph.harvard.edu
+                            <h4>Harvard T.H. Chan School Of Public Health </h4>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+     </div>
 
-        <!-- advantages ends -->
 
-        <!-- about us starts-->
-        <h1 class="text-secondary mb-3">Other Facilities</h1>
-        <div class="container">
-            <ul class="bg-light">
-                <li style="margin: 15px"><b>Healthy Eating Guideline:</b>
-                    Provide general guideline for a balanced and nutritious diet, including information on portion sizes, macronutreints, and the importance of consuming a variety of foods.
-                </li>
-                <li style="margin: 15px"><b>Nutritional Information:</b>
-                    Share in-depth information about various nutrients, vitamins, and minerals, including their functions in the body, food sources, and recommended daily intake.
-                </li>
-                <li style="margin: 15px"><b>Special Dietary Considerations:</b>
-                    Provide guidance for individuals with specific dietary needs or conditions, such as diabetes, food allergies, gluten intolerance, or vegetarian/vegan diets.
-                </li>
-                <li style="margin: 15px"><b>Nutrition For Different Life Stages:</b>
-                    Provide information on nutrition during different life stages, such as pregnancy, infancy, childhood, adolescence, and older adulthood, highlighting the specific nutrient needs and dietary considerations for each stage.
-                </li>
-                <li style="margin: 15px"><b>Food And Health Myths:</b>
-                    Debunk common myths are misconceptions about nutrition, such as detox diets, superfoods, or fad diets, and provide evidence-based information to help make informed choices.
-                </li>
-            </ul>
-        </div>
-
-        <!-- about us ends-->
-
-        <!-- services starts-->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 " style="max-width: 600px;">
-                    <h1 class="mb-3 text-secondary">Services</h1>
-                    <p></p>
-                </div>
-                <div class="bg-light rounded">
-                    <div class="row g-0">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-
-                            <!-- Carousel -->
-                            <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-                                <!-- Indicators/dots -->
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                                </div>
-
-                                <!-- The slideshow/carousel -->
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="images/diebetes.jpg" alt="" class="d-block" style="width:100%">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/sport.jpg" alt="" class="d-block" style="width:100%">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/Pregnancy1.jpg" alt="" class="d-block" style="width:100%">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/gain.jpg" alt="" class="d-block" style="width:100%">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/child.jpg" alt="" class="d-block" style="width:100%">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/cancer.jpg" alt="" class="d-block" style="width:100%">
-                                    </div>
-                                </div>
-
-                                <!-- Left and right controls/icons -->
-                                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4">Start up with your meal plan</h1>
-                                <p class="mb-4">
-                                </p>
-                                <a class="btn btn-primary py-3 px-5" href="register.php">Register Now<i class="ri-arrow-right-line"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- services ends-->
         <div class="container">
             <h1 >Did you grow up in a family obsessed with weight and dieting?</h1>
             <p>If generational diet trauma impacts your relationship to food and body image today, you're not alone. I'm Yvette, Registered Dietitian offering 1:1 nutrition therapy and body image coaching that takes into account your lived experience with lifelong diet cycles, eating disorders, and body image concerns.</p>
@@ -338,4 +289,10 @@
 
     </div>
 </body>
+
 </html>
+
+
+
+
+
