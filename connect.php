@@ -1,20 +1,19 @@
+
+
 <?php
-  //database connection
-  $conn = mysqli_connect('localhost','root','','user');
-  //if(!$conn){
-    //die("connection failed:" . mysqli_connect_error());
-  //}
-  
-  //initializing variables
-  $name = null;
-  $name_error = null;
-  $email = null;
-  $email_error = null;
-  $password = null;
-  $password_error = null;
-  $repassword = null;
-  $repassword_error = null;
-  $success = null;
+   //connect to database
+   $connect = mysqli_connect('localhost','root','','user')
+
+   //indicating errors
+   $name = null;
+   $name_error = null;
+   $email = null;
+   $email_error = null;
+   $password = null;
+   $password_error = null;
+   $repassword = null;
+   $repassword_error = null;
+   $success = null;
   
 
 
@@ -46,7 +45,6 @@
       }
     }
   }
-
-
+?>
 
 
