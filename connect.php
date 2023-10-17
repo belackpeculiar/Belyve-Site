@@ -2,7 +2,7 @@
 
 <?php
    //connect to database
-   $connect = mysqli_connect('localhost','root','','user')
+   $connect = mysqli_connect('localhost','root','','user');
 
    //indicating errors
    $name = null;
